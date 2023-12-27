@@ -1,23 +1,25 @@
-// var a = 10;
-// var b = 20;
+console.log("🚩🚩🚩🚩Using temprory variable🚩🚩🚩🚩");
+var no1 = 10;
+var no2 = 20;
 
-// // Using a temporary variable
-// var temp = a;
-// a = b;
-// b = temp;
+//Using temprory variable
+var temp = no1;
+no1 = no2;
+no2 = temp;
 
-// console.log("After swapping:");
-// console.log("a =", a); // Output: 20
-// console.log("b =", b); // Output: 10
+console.log("after swapping:");
+console.log("no1 =", no1); // Output: 20
+console.log("no2 =", no2); // Output: 10
 
-var a = 10;
-var b = 20;
+console.log("🚩🚩🚩🚩Without Using temprory variable🚩🚩🚩🚩");
+var value1 = 10;
+var value2 = 20;
 
 // Without using a third variable
-a = a + b;
-b = a - b;
-a = a - b;
+value1 = value1 + value2;
+value2 = value1 - value2;
+value1 = value1 - value2;
 
-console.log("After swapping:");
-console.log("a =", a); // Output: 20
-console.log("b =", b); // Output: 10
+console.log("after swapping:");
+console.log("no1 =", value1); // Output: 20
+console.log("no2 =", value2); // Output: 10

@@ -1,19 +1,19 @@
 console.log("🚩🚩🚩🚩Question 1🚩🚩🚩🚩");
 var myFullName;
-console.log("Before initialization:" + myFullName);
+console.log("before initialization:" + myFullName);
 
 myFullName = "Rakesh Kawade";
-console.log("After initialization:" + myFullName);
+console.log("after initialization:" + myFullName);
 
-myFullName = "Rakesh Arun Kawade";
-console.log("After Update:" + myFullName);
+myFullName = "Rakesh arun Kawade";
+console.log("after Update:" + myFullName);
 
 console.log(
   "--------------------------------------------------------------------------------"
 );
 
 console.log("🚩🚩🚩🚩Question 2🚩🚩🚩🚩");
-var myLove = "I love only JS";
+var myLove = 'I love only JS';
 console.log("My Love is:" + myLove);
 
 console.log(
@@ -22,7 +22,7 @@ console.log(
 console.log("🚩🚩🚩🚩Question 3🚩🚩🚩🚩");
 var firstName = "Rakesh";
 var lastName = "Kawade";
-var age = 36;
+var age = 24;
 var address = "Sangamner";
 var pinCode = 422605;
 var gender = "Male";
@@ -33,9 +33,9 @@ console.log(
   "\n",
   "Last Name:" + lastName,
   "\n",
-  "Age:" + age,
+  "age:" + age,
   "\n",
-  "Address:" + address,
+  "address:" + address,
   "\n",
   "PinCode:" + pinCode,
   "\n",
