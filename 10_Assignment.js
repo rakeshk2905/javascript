@@ -16,8 +16,9 @@ tempArray[j]=sortedArray[sortedArray.length-1];
 
 for (let j = 0; j < tempArray.length; j++) {
   var element = tempArray[j];
-  console.log(element);
+  element=[...tempArray]
 }
+console.log(element);
 
 
 
