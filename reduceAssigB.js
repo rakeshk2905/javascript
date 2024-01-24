@@ -87,10 +87,15 @@ console.log("====Find the Average salary for all department===");
 //Function to calculate the average salary for a given department
 function calculateAverageSalary(department) {
   // Filter employees based on the department
-  const departmentEmployees = arrayEmps.filter(emp => emp.emp_dept === department);
+  const departmentEmployees = arrayEmps.filter(
+    (emp) => emp.emp_dept === department
+  );
 
   // Use reduce to calculate the sum of salaries
-  const totalSalary = departmentEmployees.reduce((sum, emp) => sum + emp.emp_salary, 0);
+  const totalSalary = departmentEmployees.reduce(
+    (sum, emp) => sum + emp.emp_salary,
+    0
+  );
 
   // Calculate the average salary
   const averageSalary = totalSalary / departmentEmployees.length;
@@ -99,26 +104,26 @@ function calculateAverageSalary(department) {
 }
 
 // Get the unique departments from the array
-const uniqueDepartments = [...new Set(arrayEmps.map(emp => emp.emp_dept))];
+const uniqueDepartments = [...new Set(arrayEmps.map((emp) => emp.emp_dept))];
 
 // Calculate and print the average salary for each department
-uniqueDepartments.forEach(department => {
+uniqueDepartments.forEach((department) => {
   const averageSalary = calculateAverageSalary(department);
   console.log(`Average Salary for ${department} department: ${averageSalary}`);
 });
 
-
 console.log("======================Question 6==============================");
 console.log("====Find the Average salary for IT department===");
 
-const itEmployees = arrayEmps.filter(emp => emp.emp_dept === 'IT');
+const itEmployees = arrayEmps.filter((emp) => emp.emp_dept === "IT");
 
 if (itEmployees.length > 0) {
   const totalSalary = itEmployees.reduce((acc, emp) => acc + emp.emp_salary, 0);
   const averageSalary = totalSalary / itEmployees.length;
 
-  console.log(`Average salary for 'IT' department using filter() and reduce() methods: ${averageSalary}`);
+  console.log(
+    `Average salary for 'IT' department using filter() and reduce() methods: ${averageSalary}`
+  );
 } else {
-  console.log('No employees found in the IT department.');
+  console.log("No employees found in the IT department.");
 }
-
