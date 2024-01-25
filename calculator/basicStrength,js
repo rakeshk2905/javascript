@@ -1,0 +1,80 @@
+console.log(`===========Addition==========`);
+var submitButton = document.querySelector("#addition");
+var fieldOne = document.querySelector("#field-one");
+var fieldTwo = document.querySelector("#field-two");
+
+var resultValue = document.querySelector("#resultValue");
+
+submitButton.addEventListener("click", () => {
+    var valueOne = +fieldOne.value;
+    var valueTwo = +fieldTwo.value;
+    var result = valueOne + valueTwo;
+    console.log(valueOne + valueTwo);
+    // alert(` Addition is: ${valueOne + valueTwo}`);
+    var btnName = document.querySelector("#resultIs");
+    btnName.innerHTML = `Addition is : `
+    //resultValue.innerHTML = result;
+    var btnName = document.querySelector("#resultValue");
+    btnName.innerHTML = `${resultValue.innerHTML = result}`
+    
+});
+
+console.log(`===========Subtraction==========`);
+var submitButton = document.querySelector("#subtraction");
+var fieldOne = document.querySelector("#field-one");
+var fieldTwo = document.querySelector("#field-two");
+
+var resultValue = document.querySelector("#resultValue");
+
+submitButton.addEventListener("click", () => {
+    var valueOne = +fieldOne.value;
+    var valueTwo = +fieldTwo.value;
+    var result = valueOne - valueTwo;
+    console.log(valueOne - valueTwo);
+    // alert(` Addition is: ${valueOne + valueTwo}`);
+    var btnName = document.querySelector("#resultIs");
+    btnName.innerHTML = `Subtraction is : `
+    //resultValue.innerHTML = result;
+    var btnName = document.querySelector("#resultValue");
+    btnName.innerHTML = `${resultValue.innerHTML = result}`
+});
+
+console.log(`===========multiplication==========`);
+var submitButton = document.querySelector("#multiplication");
+var fieldOne = document.querySelector("#field-one");
+var fieldTwo = document.querySelector("#field-two");
+
+var resultValue = document.querySelector("#resultValue");
+
+submitButton.addEventListener("click", () => {
+    var valueOne = +fieldOne.value;
+    var valueTwo = +fieldTwo.value;
+    var result = valueOne * valueTwo;
+    console.log(valueOne * valueTwo);
+    // alert(` Addition is: ${valueOne + valueTwo}`);
+    var btnName = document.querySelector("#resultIs");
+    btnName.innerHTML = `Multiplication is : `
+    //resultValue.innerHTML = result;
+    var btnName = document.querySelector("#resultValue");
+    btnName.innerHTML = `${resultValue.innerHTML = result}`
+});
+
+console.log(`===========division==========`);
+var submitButton = document.querySelector("#division");
+var fieldOne = document.querySelector("#field-one");
+var fieldTwo = document.querySelector("#field-two");
+
+var resultValue = document.querySelector("#resultValue");
+
+submitButton.addEventListener("click", () => {
+    var valueOne = +fieldOne.value;
+    var valueTwo = +fieldTwo.value;
+    var result = valueOne / valueTwo;
+    console.log(valueOne / valueTwo);
+    // alert(` Addition is: ${valueOne + valueTwo}`);
+    var btnName = document.querySelector("#resultIs");
+    btnName.innerHTML = `Division is : `
+    //resultValue.innerHTML = result;
+    var btnName = document.querySelector("#resultValue");
+    btnName.innerHTML = `${resultValue.innerHTML = result}`
+});
