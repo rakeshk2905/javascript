@@ -40,13 +40,25 @@ for (const iterator of arrayEmployee) {
 console.log(``);
 console.log(`====================== Question 2 =======================`);
 
+arrayEmployee.sort((a, b) => (a.emp_dept > b.emp_dept ? 1 : -1));
+
+for (const iterator of arrayEmployee) {
+  console.log(
+    `Employee id : ${iterator.emp_id} ,`,
+    `Department : ${iterator.emp_dept} ,`,
+    `Company : ${iterator.emp_company} ,`
+  );
+}
+
+console.log(``);
+console.log(`====================== Question 3 =======================`);
+
 arrayEmployee.sort((key, value) => value.emp_salary - key.emp_salary);
 
 for (const iterator of arrayEmployee) {
   console.log(
-    `Name : ${iterator.emp_name} ,` ,
+    `Name : ${iterator.emp_name} ,`,
     `Employee Salary : ${iterator.emp_salary} ,`,
     `Company : ${iterator.emp_company}`
   );
 }
-
